@@ -14,7 +14,7 @@ namespace Conditional_Statement
             // declare grade as an int from user input
             int grade = int.Parse(input);
             // start if and else if statement for all grade types while using && to designate +/-
-            if (grade >= 98)
+            if (grade >= 98 && grade <=100)
             {
                 Console.WriteLine("A+");
             }
@@ -62,9 +62,13 @@ namespace Conditional_Statement
             {
                 Console.WriteLine("D-");
             }
-            else
+            else if (grade >= 0 && grade <= 59)
             {
                 Console.WriteLine("F");
+            }
+            else
+            {
+                Console.WriteLine(" Error input new value ");
             }
         }
     }
